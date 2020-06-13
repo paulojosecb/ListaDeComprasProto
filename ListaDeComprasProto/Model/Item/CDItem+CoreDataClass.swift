@@ -1,5 +1,5 @@
 //
-//  List+CoreDataClass.swift
+//  CDItem+CoreDataClass.swift
 //  ListaDeComprasProto
 //
 //  Created by Paulo José on 13/06/20.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(List)
-public class List: NSManagedObject {
+@objc(CDItem)
+public class CDItem: NSManagedObject {
 
 }

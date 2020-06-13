@@ -1,5 +1,5 @@
 //
-//  Shop+CoreDataProperties.swift
+//  CDShop+CoreDataProperties.swift
 //  ListaDeComprasProto
 //
 //  Created by Paulo José on 13/06/20.
@@ -11,27 +11,27 @@ import Foundation
 import CoreData
 
 
-extension Shop {
+extension CDShop {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Shop> {
-        return NSFetchRequest<Shop>(entityName: "Shop")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<CDShop> {
+        return NSFetchRequest<CDShop>(entityName: "CDShop")
     }
 
     @NSManaged public var date: Date?
     @NSManaged public var finalTotal: Double
     @NSManaged public var checkedOut: Bool
     @NSManaged public var cart: NSSet?
-    
+
 }
 
 // MARK: Generated accessors for cart
-extension Shop {
+extension CDShop {
 
     @objc(addCartObject:)
-    @NSManaged public func addToCart(_ value: Item)
+    @NSManaged public func addToCart(_ value: CDItem)
 
     @objc(removeCartObject:)
-    @NSManaged public func removeFromCart(_ value: Item)
+    @NSManaged public func removeFromCart(_ value: CDItem)
 
     @objc(addCart:)
     @NSManaged public func addToCart(_ values: NSSet)

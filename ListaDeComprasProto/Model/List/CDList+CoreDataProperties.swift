@@ -1,5 +1,5 @@
 //
-//  List+CoreDataProperties.swift
+//  CDList+CoreDataProperties.swift
 //  ListaDeComprasProto
 //
 //  Created by Paulo José on 13/06/20.
@@ -11,26 +11,26 @@ import Foundation
 import CoreData
 
 
-extension List {
+extension CDList {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<List> {
-        return NSFetchRequest<List>(entityName: "List")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<CDList> {
+        return NSFetchRequest<CDList>(entityName: "CDList")
     }
 
     @NSManaged public var name: String?
     @NSManaged public var items: NSSet?
     @NSManaged public var itemsLists: NSSet?
-    
+
 }
 
 // MARK: Generated accessors for items
-extension List {
+extension CDList {
 
     @objc(addItemsObject:)
-    @NSManaged public func addToItems(_ value: Item)
+    @NSManaged public func addToItems(_ value: CDItem)
 
     @objc(removeItemsObject:)
-    @NSManaged public func removeFromItems(_ value: Item)
+    @NSManaged public func removeFromItems(_ value: CDItem)
 
     @objc(addItems:)
     @NSManaged public func addToItems(_ values: NSSet)
@@ -41,13 +41,13 @@ extension List {
 }
 
 // MARK: Generated accessors for itemsLists
-extension List {
+extension CDList {
 
     @objc(addItemsListsObject:)
-    @NSManaged public func addToItemsLists(_ value: ItemList)
+    @NSManaged public func addToItemsLists(_ value: CDItemList)
 
     @objc(removeItemsListsObject:)
-    @NSManaged public func removeFromItemsLists(_ value: ItemList)
+    @NSManaged public func removeFromItemsLists(_ value: CDItemList)
 
     @objc(addItemsLists:)
     @NSManaged public func addToItemsLists(_ values: NSSet)

@@ -1,5 +1,5 @@
 //
-//  Item+CoreDataProperties.swift
+//  CDItem+CoreDataProperties.swift
 //  ListaDeComprasProto
 //
 //  Created by Paulo José on 13/06/20.
@@ -10,11 +10,10 @@
 import Foundation
 import CoreData
 
+extension CDItem {
 
-extension Item {
-
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Item> {
-        return NSFetchRequest<Item>(entityName: "Item")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<CDItem> {
+        return NSFetchRequest<CDItem>(entityName: "CDItem")
     }
 
     @NSManaged public var name: String?
