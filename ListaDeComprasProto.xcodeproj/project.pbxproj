@@ -21,15 +21,15 @@
 		7B0B1CEF2495757D0009141B /* CDList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CE72495757D0009141B /* CDList+CoreDataProperties.swift */; };
 		7B0B1CF22495757D0009141B /* CDItemList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CEA2495757D0009141B /* CDItemList+CoreDataClass.swift */; };
 		7B0B1CF32495757D0009141B /* CDItemList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CEB2495757D0009141B /* CDItemList+CoreDataProperties.swift */; };
-		7B0B1CF42495757D0009141B /* CDShop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CEC2495757D0009141B /* CDShop+CoreDataClass.swift */; };
-		7B0B1CF52495757D0009141B /* CDShop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CED2495757D0009141B /* CDShop+CoreDataProperties.swift */; };
 		7B0B1CF8249575B50009141B /* CDItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CF6249575B50009141B /* CDItem+CoreDataClass.swift */; };
 		7B0B1CF9249575B50009141B /* CDItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CF7249575B50009141B /* CDItem+CoreDataProperties.swift */; };
 		7B0B1CFC249575CE0009141B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CFB249575CE0009141B /* List.swift */; };
-		7B0B1CFE249575DD0009141B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CFD249575DD0009141B /* Shop.swift */; };
+		7B0B1CFE249575DD0009141B /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CFD249575DD0009141B /* ShoppingList.swift */; };
 		7B0B1D002495761B0009141B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CFF2495761B0009141B /* Item.swift */; };
 		7B0B1D04249576BE0009141B /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D03249576BE0009141B /* CustomError.swift */; };
 		7B0B1D062495798A0009141B /* CDShop+BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D05249579890009141B /* CDShop+BusinessLogic.swift */; };
+		7B0B1D0924957CD30009141B /* CDShoppingList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D0724957CD30009141B /* CDShoppingList+CoreDataClass.swift */; };
+		7B0B1D0A24957CD30009141B /* CDShoppingList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D0824957CD30009141B /* CDShoppingList+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,15 +70,15 @@
 		7B0B1CE72495757D0009141B /* CDList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7B0B1CEA2495757D0009141B /* CDItemList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDItemList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7B0B1CEB2495757D0009141B /* CDItemList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDItemList+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7B0B1CEC2495757D0009141B /* CDShop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShop+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7B0B1CED2495757D0009141B /* CDShop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShop+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7B0B1CF6249575B50009141B /* CDItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7B0B1CF7249575B50009141B /* CDItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7B0B1CFB249575CE0009141B /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		7B0B1CFD249575DD0009141B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		7B0B1CFD249575DD0009141B /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
 		7B0B1CFF2495761B0009141B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7B0B1D03249576BE0009141B /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		7B0B1D05249579890009141B /* CDShop+BusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShop+BusinessLogic.swift"; sourceTree = "<group>"; };
+		7B0B1D0724957CD30009141B /* CDShoppingList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShoppingList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7B0B1D0824957CD30009141B /* CDShoppingList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShoppingList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				7B0B1CFA249575C20009141B /* Protocols */,
-				7B0B1CE32495730C0009141B /* Shop */,
+				7B0B1CE32495730C0009141B /* ShoppingList */,
 				7B0B1CE2249573070009141B /* ItemList */,
 				7B0B1CE1249573030009141B /* List */,
 				7B0B1CE0249572FF0009141B /* Item */,
@@ -201,21 +201,21 @@
 			path = ItemList;
 			sourceTree = "<group>";
 		};
-		7B0B1CE32495730C0009141B /* Shop */ = {
+		7B0B1CE32495730C0009141B /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				7B0B1CEC2495757D0009141B /* CDShop+CoreDataClass.swift */,
+				7B0B1D0724957CD30009141B /* CDShoppingList+CoreDataClass.swift */,
+				7B0B1D0824957CD30009141B /* CDShoppingList+CoreDataProperties.swift */,
 				7B0B1D05249579890009141B /* CDShop+BusinessLogic.swift */,
-				7B0B1CED2495757D0009141B /* CDShop+CoreDataProperties.swift */,
 			);
-			path = Shop;
+			path = ShoppingList;
 			sourceTree = "<group>";
 		};
 		7B0B1CFA249575C20009141B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				7B0B1CFB249575CE0009141B /* List.swift */,
-				7B0B1CFD249575DD0009141B /* Shop.swift */,
+				7B0B1CFD249575DD0009141B /* ShoppingList.swift */,
 				7B0B1CFF2495761B0009141B /* Item.swift */,
 			);
 			path = Protocols;
@@ -353,22 +353,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0B1C592495665E0009141B /* ViewController.swift in Sources */,
-				7B0B1CF52495757D0009141B /* CDShop+CoreDataProperties.swift in Sources */,
 				7B0B1CF9249575B50009141B /* CDItem+CoreDataProperties.swift in Sources */,
 				7B0B1D062495798A0009141B /* CDShop+BusinessLogic.swift in Sources */,
 				7B0B1C552495665E0009141B /* AppDelegate.swift in Sources */,
+				7B0B1D0A24957CD30009141B /* CDShoppingList+CoreDataProperties.swift in Sources */,
 				7B0B1D04249576BE0009141B /* CustomError.swift in Sources */,
 				7B0B1D002495761B0009141B /* Item.swift in Sources */,
-				7B0B1CF42495757D0009141B /* CDShop+CoreDataClass.swift in Sources */,
 				7B0B1CEF2495757D0009141B /* CDList+CoreDataProperties.swift in Sources */,
 				7B0B1C5F2495665E0009141B /* ListaDeComprasProto.xcdatamodeld in Sources */,
 				7B0B1C572495665E0009141B /* SceneDelegate.swift in Sources */,
 				7B0B1CF22495757D0009141B /* CDItemList+CoreDataClass.swift in Sources */,
 				7B0B1CFC249575CE0009141B /* List.swift in Sources */,
-				7B0B1CFE249575DD0009141B /* Shop.swift in Sources */,
+				7B0B1CFE249575DD0009141B /* ShoppingList.swift in Sources */,
 				7B0B1CF32495757D0009141B /* CDItemList+CoreDataProperties.swift in Sources */,
 				7B0B1CEE2495757D0009141B /* CDList+CoreDataClass.swift in Sources */,
 				7B0B1CE52495732B0009141B /* CDList+BusinessLogic.swift in Sources */,
+				7B0B1D0924957CD30009141B /* CDShoppingList+CoreDataClass.swift in Sources */,
 				7B0B1CF8249575B50009141B /* CDItem+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

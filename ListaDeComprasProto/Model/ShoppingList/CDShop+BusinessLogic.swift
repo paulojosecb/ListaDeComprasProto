@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-extension CDShop: Shop {
+extension CDShoppingList: ShoppingList {
     
     func moveToCart(_ item: Item) throws {
         guard let item = item as? CDItem else {

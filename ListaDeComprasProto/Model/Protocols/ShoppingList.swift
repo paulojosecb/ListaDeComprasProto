@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Shop {
+protocol ShoppingList {
     
     func moveToCart(_ item: Item) throws
     func removeFromCart(_ item: Item) throws

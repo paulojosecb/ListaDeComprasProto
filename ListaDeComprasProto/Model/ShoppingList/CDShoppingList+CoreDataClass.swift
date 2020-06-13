@@ -1,5 +1,5 @@
 //
-//  CDShop+CoreDataClass.swift
+//  CDShoppingList+CoreDataClass.swift
 //  ListaDeComprasProto
 //
 //  Created by Paulo José on 13/06/20.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(CDShop)
-public class CDShop: CDList {
-    
+@objc(CDShoppingList)
+public class CDShoppingList: CDList {
+
 }
