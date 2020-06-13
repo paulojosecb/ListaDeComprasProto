@@ -28,15 +28,15 @@ extension CDShoppingList {
 extension CDShoppingList {
 
     @objc(addCartObject:)
-    @NSManaged public func addToCart(_ value: CDItem)
+    @NSManaged internal func addToCart(_ value: CDItem)
 
     @objc(removeCartObject:)
-    @NSManaged public func removeFromCart(_ value: CDItem)
+    @NSManaged internal func removeFromCart(_ value: CDItem)
 
     @objc(addCart:)
-    @NSManaged public func addToCart(_ values: NSSet)
+    @NSManaged internal func addToCart(_ values: NSSet)
 
     @objc(removeCart:)
-    @NSManaged public func removeFromCart(_ values: NSSet)
+    @NSManaged internal func removeFromCart(_ values: NSSet)
 
 }

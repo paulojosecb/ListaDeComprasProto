@@ -27,16 +27,16 @@ extension CDList {
 extension CDList {
 
     @objc(addItemsObject:)
-    @NSManaged public func addToItems(_ value: CDItem)
+    @NSManaged internal func addToItems(_ value: CDItem)
 
     @objc(removeItemsObject:)
-    @NSManaged public func removeFromItems(_ value: CDItem)
+    @NSManaged internal func removeFromItems(_ value: CDItem)
 
     @objc(addItems:)
-    @NSManaged public func addToItems(_ values: NSSet)
+    @NSManaged internal func addToItems(_ values: NSSet)
 
     @objc(removeItems:)
-    @NSManaged public func removeFromItems(_ values: NSSet)
+    @NSManaged internal func removeFromItems(_ values: NSSet)
 
 }
 
@@ -44,15 +44,15 @@ extension CDList {
 extension CDList {
 
     @objc(addItemsListsObject:)
-    @NSManaged public func addToItemsLists(_ value: CDItemList)
+    @NSManaged internal func addToItemsLists(_ value: CDItemList)
 
     @objc(removeItemsListsObject:)
-    @NSManaged public func removeFromItemsLists(_ value: CDItemList)
+    @NSManaged internal func removeFromItemsLists(_ value: CDItemList)
 
     @objc(addItemsLists:)
-    @NSManaged public func addToItemsLists(_ values: NSSet)
+    @NSManaged internal func addToItemsLists(_ values: NSSet)
 
     @objc(removeItemsLists:)
-    @NSManaged public func removeFromItemsLists(_ values: NSSet)
+    @NSManaged internal func removeFromItemsLists(_ values: NSSet)
 
 }
