@@ -13,5 +13,5 @@ protocol List {
     func remove(_ item: Item) throws
     
     func quantityOf(_ item: Item) throws -> Int
-    func totalPriceOf(_ item: Double) throws -> Double
+    func totalPriceOf(_ item: Item) throws -> Double
 }

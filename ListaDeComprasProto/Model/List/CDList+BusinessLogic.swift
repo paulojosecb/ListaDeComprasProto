@@ -70,8 +70,21 @@ extension CDList: List {
         return Int(itemList.quantity)
     }
     
-    func totalPriceOf(_ item: Double) throws -> Double {
-        return 0
+    func totalPriceOf(_ item: Item) throws -> Double {
+        guard let item = item as? CDItem else {
+            throw CustomError(message: "")
+        }
+        
+        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList],
+            let itemList = itemListsArr.filter({ $0.item == item }).first else {
+            throw CustomError(message: "")
+        }
+        
+        if (item.isPackage) {
+            return item.pricePerUnit * Double(itemList.quantity)
+        } else {
+            return item.pricePerUnit * itemList.weight
+        }
     }
     
 }
