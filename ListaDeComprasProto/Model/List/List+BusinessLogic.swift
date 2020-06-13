@@ -35,4 +35,29 @@ extension CDList: List {
         
     }
     
+    func remove(_ item: Item) throws {
+        guard let item = item as? CDItem else {
+            throw CustomError(message: "")
+        }
+    
+        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList] else {
+            throw CustomError(message: "")
+        }
+        
+        guard let itemList = itemListsArr.filter({ $0.item == item }).first else {
+            throw CustomError(message: "")
+        }
+        
+        self.removeFromItemsLists(itemList)
+        self.removeFromItems(item)
+        managedObjectContext?.delete(itemList)
+        
+        do {
+            try managedObjectContext?.save()
+        } catch let error {
+            print(error)
+        }
+    
+    }
+    
 }

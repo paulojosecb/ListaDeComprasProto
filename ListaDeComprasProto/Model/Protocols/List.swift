@@ -10,4 +10,5 @@ import Foundation
 
 protocol List {
     func add(_ item: Item, quantity: Int, weight: Double) throws
+    func remove(_ item: Item) throws
 }
