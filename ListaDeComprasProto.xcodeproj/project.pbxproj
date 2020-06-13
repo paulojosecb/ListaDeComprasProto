@@ -16,7 +16,7 @@
 		7B0B1C642495665F0009141B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0B1C622495665F0009141B /* LaunchScreen.storyboard */; };
 		7B0B1C6F249566600009141B /* ListaDeComprasProtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1C6E249566600009141B /* ListaDeComprasProtoTests.swift */; };
 		7B0B1C7A249566600009141B /* ListaDeComprasProtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1C79249566600009141B /* ListaDeComprasProtoUITests.swift */; };
-		7B0B1CE52495732B0009141B /* List+BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CE42495732B0009141B /* List+BusinessLogic.swift */; };
+		7B0B1CE52495732B0009141B /* CDList+BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CE42495732B0009141B /* CDList+BusinessLogic.swift */; };
 		7B0B1CEE2495757D0009141B /* CDList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CE62495757D0009141B /* CDList+CoreDataClass.swift */; };
 		7B0B1CEF2495757D0009141B /* CDList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CE72495757D0009141B /* CDList+CoreDataProperties.swift */; };
 		7B0B1CF22495757D0009141B /* CDItemList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CEA2495757D0009141B /* CDItemList+CoreDataClass.swift */; };
@@ -29,6 +29,7 @@
 		7B0B1CFE249575DD0009141B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CFD249575DD0009141B /* Shop.swift */; };
 		7B0B1D002495761B0009141B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1CFF2495761B0009141B /* Item.swift */; };
 		7B0B1D04249576BE0009141B /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D03249576BE0009141B /* CustomError.swift */; };
+		7B0B1D062495798A0009141B /* CDShop+BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D05249579890009141B /* CDShop+BusinessLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +65,7 @@
 		7B0B1C75249566600009141B /* ListaDeComprasProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListaDeComprasProtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0B1C79249566600009141B /* ListaDeComprasProtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeComprasProtoUITests.swift; sourceTree = "<group>"; };
 		7B0B1C7B249566600009141B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B0B1CE42495732B0009141B /* List+BusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BusinessLogic.swift"; sourceTree = "<group>"; };
+		7B0B1CE42495732B0009141B /* CDList+BusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDList+BusinessLogic.swift"; sourceTree = "<group>"; };
 		7B0B1CE62495757D0009141B /* CDList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7B0B1CE72495757D0009141B /* CDList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7B0B1CEA2495757D0009141B /* CDItemList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDItemList+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		7B0B1CFD249575DD0009141B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		7B0B1CFF2495761B0009141B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7B0B1D03249576BE0009141B /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		7B0B1D05249579890009141B /* CDShop+BusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShop+BusinessLogic.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +187,7 @@
 			children = (
 				7B0B1CE62495757D0009141B /* CDList+CoreDataClass.swift */,
 				7B0B1CE72495757D0009141B /* CDList+CoreDataProperties.swift */,
-				7B0B1CE42495732B0009141B /* List+BusinessLogic.swift */,
+				7B0B1CE42495732B0009141B /* CDList+BusinessLogic.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				7B0B1CEC2495757D0009141B /* CDShop+CoreDataClass.swift */,
+				7B0B1D05249579890009141B /* CDShop+BusinessLogic.swift */,
 				7B0B1CED2495757D0009141B /* CDShop+CoreDataProperties.swift */,
 			);
 			path = Shop;
@@ -352,6 +355,7 @@
 				7B0B1C592495665E0009141B /* ViewController.swift in Sources */,
 				7B0B1CF52495757D0009141B /* CDShop+CoreDataProperties.swift in Sources */,
 				7B0B1CF9249575B50009141B /* CDItem+CoreDataProperties.swift in Sources */,
+				7B0B1D062495798A0009141B /* CDShop+BusinessLogic.swift in Sources */,
 				7B0B1C552495665E0009141B /* AppDelegate.swift in Sources */,
 				7B0B1D04249576BE0009141B /* CustomError.swift in Sources */,
 				7B0B1D002495761B0009141B /* Item.swift in Sources */,
@@ -364,7 +368,7 @@
 				7B0B1CFE249575DD0009141B /* Shop.swift in Sources */,
 				7B0B1CF32495757D0009141B /* CDItemList+CoreDataProperties.swift in Sources */,
 				7B0B1CEE2495757D0009141B /* CDList+CoreDataClass.swift in Sources */,
-				7B0B1CE52495732B0009141B /* List+BusinessLogic.swift in Sources */,
+				7B0B1CE52495732B0009141B /* CDList+BusinessLogic.swift in Sources */,
 				7B0B1CF8249575B50009141B /* CDItem+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

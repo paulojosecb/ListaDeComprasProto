@@ -10,4 +10,7 @@ import Foundation
 
 protocol Shop {
     
+    func moveToCart(_ item: Item) throws
+    func removeFromCart(_ item: Item) throws
+    
 }
