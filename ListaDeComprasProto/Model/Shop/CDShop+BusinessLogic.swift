@@ -21,13 +21,24 @@ extension CDShop: Shop {
         
         do {
             try self.managedObjectContext?.save()
-        } catch let _ {
+        } catch _ {
             throw CustomError(message: "")
         }
     }
     
     func removeFromCart(_ item: Item) throws {
+        guard let item = item as? CDItem else {
+            throw CustomError(message: "")
+        }
         
+        self.removeFromCart(item)
+        self.addToItems(item)
+        
+        do {
+            try self.managedObjectContext?.save()
+        } catch _ {
+            throw CustomError(message: "")
+        }
     }
     
 }
