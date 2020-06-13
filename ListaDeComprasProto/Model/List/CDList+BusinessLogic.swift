@@ -57,4 +57,21 @@ extension CDList: List {
     
     }
     
+    func quantityOf(_ item: Item) throws -> Int {
+        guard let item = item as? CDItem else {
+            throw CustomError(message: "")
+        }
+        
+        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList],
+            let itemList = itemListsArr.filter({ $0.item == item }).first else {
+            throw CustomError(message: "")
+        }
+        
+        return Int(itemList.quantity)
+    }
+    
+    func totalPriceOf(_ item: Double) throws -> Double {
+        return 0
+    }
+    
 }
