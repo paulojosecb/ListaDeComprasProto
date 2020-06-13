@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="brand" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="Transformable"/>
+        <attribute name="isPackage" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="pricePerUnit" optional="YES" attributeType="Double" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ItemList" representedClassName="ItemList" syncable="YES">
+        <attribute name="quantity" attributeType="Integer 16" minValueString="1" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item"/>
+        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="itemsLists" inverseEntity="List"/>
+    </entity>
+    <entity name="List" representedClassName="List" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="List's name"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item"/>
+        <relationship name="itemsLists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ItemList" inverseName="list" inverseEntity="ItemList"/>
+    </entity>
+    <entity name="Shop" representedClassName="Shop" parentEntity="List" syncable="YES">
+        <attribute name="checkedOut" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="finalTotal" attributeType="Double" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="cart" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item"/>
+    </entity>
+    <elements>
+        <element name="Item" positionX="-9" positionY="36" width="128" height="118"/>
+        <element name="Shop" positionX="0" positionY="45" width="128" height="103"/>
+        <element name="List" positionX="18" positionY="63" width="128" height="88"/>
+        <element name="ItemList" positionX="45" positionY="135" width="128" height="103"/>
+    </elements>
 </model>
