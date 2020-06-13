@@ -12,5 +12,6 @@ protocol Shop {
     
     func moveToCart(_ item: Item) throws
     func removeFromCart(_ item: Item) throws
+    func removeFromShop(_ item: Item) throws 
     
 }

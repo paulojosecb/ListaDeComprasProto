@@ -12,5 +12,5 @@ import CoreData
 
 @objc(CDShop)
 public class CDShop: CDList {
-
+    
 }

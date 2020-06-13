@@ -40,11 +40,8 @@ extension CDList: List {
             throw CustomError(message: "")
         }
     
-        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList] else {
-            throw CustomError(message: "")
-        }
-        
-        guard let itemList = itemListsArr.filter({ $0.item == item }).first else {
+        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList],
+            let itemList = itemListsArr.filter({ $0.item == item }).first else {
             throw CustomError(message: "")
         }
         
