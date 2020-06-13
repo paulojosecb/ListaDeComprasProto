@@ -19,7 +19,7 @@ extension CDShoppingList {
 
     @NSManaged public var date: Date?
     @NSManaged public var finalTotal: Double
-    @NSManaged public var checkedOut: Bool
+    @NSManaged internal var checkedOut: Bool
     @NSManaged public var cart: NSSet?
 
 }
