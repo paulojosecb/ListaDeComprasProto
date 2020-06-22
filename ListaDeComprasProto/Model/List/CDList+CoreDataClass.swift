@@ -9,8 +9,9 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 @objc(CDList)
 public class CDList: NSManagedObject {
-
+    static let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 }

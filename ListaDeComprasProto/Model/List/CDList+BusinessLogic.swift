@@ -8,9 +8,49 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 extension CDList: List {
 
+    static func fetchLists(completion: @escaping ([List]) -> Void) throws {
+        do {
+            guard let lists = try CDList.managedContext.fetch(CDList.fetchRequest()) as? [List] else {
+                throw ListsError.fetchingError
+            }
+            completion(lists)
+        } catch _ {
+            throw ListsError.fetchingError
+        }
+        
+    }
+
+    static func createList(name: String, completion: @escaping ([List]) -> ()) throws {
+        let list = CDList(context: CDList.managedContext)
+        list.name = name
+        
+        do {
+            try CDList.managedContext.save()
+            try CDList.fetchLists(completion: completion)
+        } catch {
+            throw ListsError.creatingError
+        }
+    }
+    
+    static func delete(_ list: List, completion: @escaping ([List]) -> Void) throws {
+        do {
+            guard let cdList = list as? CDList else {
+                throw ListsError.deletingError
+            }
+            
+            managedContext.delete(cdList)
+            try CDList.managedContext.save()
+            try CDList.fetchLists(completion: completion)
+            
+        } catch _ {
+            throw ListsError.deletingError
+        }
+    }
+    
     func add(_ item: Item, quantity: Int, weight: Double = 0) throws {
         
         guard let item = item as? CDItem else {
@@ -34,7 +74,7 @@ extension CDList: List {
         }
         
     }
-    
+        
     func remove(_ item: Item) throws {
         guard let item = item as? CDItem else {
             throw CustomError(message: "")

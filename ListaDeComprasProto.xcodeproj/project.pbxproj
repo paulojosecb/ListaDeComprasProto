@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7B0B1C552495665E0009141B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1C542495665E0009141B /* AppDelegate.swift */; };
 		7B0B1C572495665E0009141B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1C562495665E0009141B /* SceneDelegate.swift */; };
-		7B0B1C592495665E0009141B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1C582495665E0009141B /* ViewController.swift */; };
+		7B0B1C592495665E0009141B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1C582495665E0009141B /* ListViewController.swift */; };
 		7B0B1C5C2495665E0009141B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0B1C5A2495665E0009141B /* Main.storyboard */; };
 		7B0B1C5F2495665E0009141B /* ListaDeComprasProto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1C5D2495665E0009141B /* ListaDeComprasProto.xcdatamodeld */; };
 		7B0B1C612495665F0009141B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B0B1C602495665F0009141B /* Assets.xcassets */; };
@@ -30,6 +30,7 @@
 		7B0B1D062495798A0009141B /* CDShop+BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D05249579890009141B /* CDShop+BusinessLogic.swift */; };
 		7B0B1D0924957CD30009141B /* CDShoppingList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D0724957CD30009141B /* CDShoppingList+CoreDataClass.swift */; };
 		7B0B1D0A24957CD30009141B /* CDShoppingList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B1D0824957CD30009141B /* CDShoppingList+CoreDataProperties.swift */; };
+		7B24929C24A13A7100F2EC64 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24929B24A13A7100F2EC64 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,7 @@
 		7B0B1C512495665E0009141B /* ListaDeComprasProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaDeComprasProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0B1C542495665E0009141B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B0B1C562495665E0009141B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B0B1C582495665E0009141B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B0B1C582495665E0009141B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7B0B1C5B2495665E0009141B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B0B1C5E2495665E0009141B /* ListaDeComprasProto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListaDeComprasProto.xcdatamodel; sourceTree = "<group>"; };
 		7B0B1C602495665F0009141B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		7B0B1D05249579890009141B /* CDShop+BusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShop+BusinessLogic.swift"; sourceTree = "<group>"; };
 		7B0B1D0724957CD30009141B /* CDShoppingList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShoppingList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7B0B1D0824957CD30009141B /* CDShoppingList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDShoppingList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7B24929B24A13A7100F2EC64 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +131,9 @@
 		7B0B1C532495665E0009141B /* ListaDeComprasProto */ = {
 			isa = PBXGroup;
 			children = (
+				7B2D936A24998F25007F72EC /* Controllers */,
 				7B0B1C542495665E0009141B /* AppDelegate.swift */,
 				7B0B1C562495665E0009141B /* SceneDelegate.swift */,
-				7B0B1C582495665E0009141B /* ViewController.swift */,
 				7B0B1CCF249572980009141B /* Model */,
 				7B0B1C5A2495665E0009141B /* Main.storyboard */,
 				7B0B1C602495665F0009141B /* Assets.xcassets */,
@@ -219,6 +221,23 @@
 				7B0B1CFF2495761B0009141B /* Item.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7B24929A24A13A6300F2EC64 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7B0B1C582495665E0009141B /* ListViewController.swift */,
+				7B24929B24A13A7100F2EC64 /* ListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		7B2D936A24998F25007F72EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B24929A24A13A6300F2EC64 /* List */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0B1C592495665E0009141B /* ViewController.swift in Sources */,
+				7B0B1C592495665E0009141B /* ListViewController.swift in Sources */,
 				7B0B1CF9249575B50009141B /* CDItem+CoreDataProperties.swift in Sources */,
 				7B0B1D062495798A0009141B /* CDShop+BusinessLogic.swift in Sources */,
 				7B0B1C552495665E0009141B /* AppDelegate.swift in Sources */,
@@ -366,6 +385,7 @@
 				7B0B1CFC249575CE0009141B /* List.swift in Sources */,
 				7B0B1CFE249575DD0009141B /* ShoppingList.swift in Sources */,
 				7B0B1CF32495757D0009141B /* CDItemList+CoreDataProperties.swift in Sources */,
+				7B24929C24A13A7100F2EC64 /* ListViewModel.swift in Sources */,
 				7B0B1CEE2495757D0009141B /* CDList+CoreDataClass.swift in Sources */,
 				7B0B1CE52495732B0009141B /* CDList+BusinessLogic.swift in Sources */,
 				7B0B1D0924957CD30009141B /* CDShoppingList+CoreDataClass.swift in Sources */,
