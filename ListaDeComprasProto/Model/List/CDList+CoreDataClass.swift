@@ -2,7 +2,7 @@
 //  CDList+CoreDataClass.swift
 //  ListaDeComprasProto
 //
-//  Created by Paulo José on 22/06/20.
+//  Created by Paulo José on 10/08/20.
 //  Copyright © 2020 Paulo José. All rights reserved.
 //
 //

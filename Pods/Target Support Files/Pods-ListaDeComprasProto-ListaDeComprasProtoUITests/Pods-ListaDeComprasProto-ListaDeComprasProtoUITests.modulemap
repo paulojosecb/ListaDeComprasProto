@@ -1,0 +1,6 @@
+framework module Pods_ListaDeComprasProto_ListaDeComprasProtoUITests {
+  umbrella header "Pods-ListaDeComprasProto-ListaDeComprasProtoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

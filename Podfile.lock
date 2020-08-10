@@ -1,0 +1,16 @@
+PODS:
+  - CloudCore (2.0.1)
+
+DEPENDENCIES:
+  - CloudCore (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - CloudCore
+
+SPEC CHECKSUMS:
+  CloudCore: f06924bdb58285a834f550633e28a67e6196d7b1
+
+PODFILE CHECKSUM: bb6fcf3f33353dba12a1f0e2bf309f334fd64004
+
+COCOAPODS: 1.9.3
