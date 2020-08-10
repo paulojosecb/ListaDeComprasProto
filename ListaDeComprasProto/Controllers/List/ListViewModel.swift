@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import UIKit
-import CoreData
 
 protocol ListsBusinessLogic {
     func createList(with name: String) throws
@@ -40,8 +38,6 @@ enum TableViewUpdate {
 
 
 class ListViewModel: ListsBusinessLogic {
-    let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-
     let viewController: ListViewController
     
     var lists: [List] = []

@@ -10,6 +10,7 @@ import Foundation
 
 protocol List {
     var name: String? { get }
+    var items: [Item] { get }
     
     static func fetchLists(completion: @escaping ([List]) -> ()) throws
     static func createList(name: String, completion: @escaping ([List]) -> ()) throws

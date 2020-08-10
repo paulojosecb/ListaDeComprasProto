@@ -11,6 +11,12 @@ import CoreData
 import UIKit
 
 extension CDList: List {
+    
+    var items: [Item] {
+        get {
+            return (self.cdItems?.allObjects as? [Item]) ?? []
+        }
+    }
 
     static func fetchLists(completion: @escaping ([List]) -> Void) throws {
         do {
@@ -34,6 +40,7 @@ extension CDList: List {
         } catch {
             throw ListsError.creatingError
         }
+    
     }
     
     static func delete(_ list: List, completion: @escaping ([List]) -> Void) throws {
@@ -42,7 +49,7 @@ extension CDList: List {
                 throw ListsError.deletingError
             }
             
-            managedContext.delete(cdList)
+            CDList.managedContext.delete(cdList)
             try CDList.managedContext.save()
             try CDList.fetchLists(completion: completion)
             
@@ -64,8 +71,8 @@ extension CDList: List {
         itemList.quantity = Int16(quantity)
         itemList.weight = weight
     
-        self.addToItems(item)
-        self.addToItemsLists(itemList)
+        self.addToCdItems(item)
+        self.addToCdItemsLists(itemList)
         
         do {
             try managedObjectContext?.save()
@@ -80,13 +87,13 @@ extension CDList: List {
             throw CustomError(message: "")
         }
     
-        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList],
+        guard let itemListsArr = self.cdItemsLists?.allObjects as? [CDItemList],
             let itemList = itemListsArr.filter({ $0.item == item }).first else {
             throw CustomError(message: "")
         }
         
-        self.removeFromItemsLists(itemList)
-        self.removeFromItems(item)
+        self.removeFromCdItemsLists(itemList)
+        self.removeFromCdItems(item)
         managedObjectContext?.delete(itemList)
         
         do {
@@ -102,7 +109,7 @@ extension CDList: List {
             throw CustomError(message: "")
         }
         
-        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList],
+        guard let itemListsArr = self.cdItemsLists?.allObjects as? [CDItemList],
             let itemList = itemListsArr.filter({ $0.item == item }).first else {
             throw CustomError(message: "")
         }
@@ -115,7 +122,7 @@ extension CDList: List {
             throw CustomError(message: "")
         }
         
-        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList],
+        guard let itemListsArr = self.cdItemsLists?.allObjects as? [CDItemList],
             let itemList = itemListsArr.filter({ $0.item == item }).first else {
             throw CustomError(message: "")
         }

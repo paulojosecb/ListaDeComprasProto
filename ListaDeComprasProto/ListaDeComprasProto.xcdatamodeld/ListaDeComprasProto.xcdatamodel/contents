@@ -11,12 +11,12 @@
         <attribute name="quantity" attributeType="Integer 16" minValueString="1" defaultValueString="1" usesScalarValueType="YES"/>
         <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="item" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDItem"/>
-        <relationship name="list" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDList" inverseName="itemsLists" inverseEntity="CDList"/>
+        <relationship name="list" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDList" inverseName="cdItemsLists" inverseEntity="CDList"/>
     </entity>
     <entity name="CDList" representedClassName="CDList" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" defaultValueString="List's name"/>
-        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDItem"/>
-        <relationship name="itemsLists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDItemList" inverseName="list" inverseEntity="CDItemList"/>
+        <relationship name="cdItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDItem"/>
+        <relationship name="cdItemsLists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDItemList" inverseName="list" inverseEntity="CDItemList"/>
     </entity>
     <entity name="CDShoppingList" representedClassName="CDShoppingList" parentEntity="CDList" syncable="YES">
         <attribute name="checkedOut" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
@@ -26,8 +26,8 @@
     </entity>
     <elements>
         <element name="CDItem" positionX="-9" positionY="36" width="128" height="118"/>
-        <element name="CDShoppingList" positionX="0" positionY="45" width="128" height="103"/>
-        <element name="CDList" positionX="18" positionY="63" width="128" height="88"/>
         <element name="CDItemList" positionX="45" positionY="135" width="128" height="103"/>
+        <element name="CDList" positionX="18" positionY="63" width="128" height="88"/>
+        <element name="CDShoppingList" positionX="0" positionY="45" width="128" height="103"/>
     </elements>
 </model>

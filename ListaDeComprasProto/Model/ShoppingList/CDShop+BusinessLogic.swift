@@ -24,12 +24,12 @@ extension CDShoppingList: ShoppingList {
         
         let item = try self.convert(item)
         
-        if (!(items?.contains(item) ?? true)) {
+        if (!(cdItems?.contains(item) ?? true)) {
             throw CustomError(message: "")
         }
         
         self.addToCart(item)
-        self.removeFromItems(item)
+        self.removeFromCdItems(item)
         
         do {
             try self.managedObjectContext?.save()
@@ -46,7 +46,7 @@ extension CDShoppingList: ShoppingList {
         let item = try self.convert(item)
         
         self.removeFromCart(item)
-        self.addToItems(item)
+        self.addToCdItems(item)
         
         do {
             try self.managedObjectContext?.save()
@@ -69,17 +69,17 @@ extension CDShoppingList: ShoppingList {
             self.removeFromCart(item)
         }
         
-        if (items?.contains(item) ?? false) {
-            self.removeFromItems(item)
+        if (cdItems?.contains(item) ?? false) {
+            self.removeFromCdItems(item)
         }
         
-        guard let itemListsArr = self.itemsLists?.allObjects as? [CDItemList],
+        guard let itemListsArr = self.cdItemsLists?.allObjects as? [CDItemList],
             let itemList = itemListsArr.filter({ $0.item == item }).first else {
             throw CustomError(message: "")
         }
 
         
-        self.removeFromItemsLists(itemList)
+        self.removeFromCdItemsLists(itemList)
         managedObjectContext?.delete(itemList)
         
         do {
